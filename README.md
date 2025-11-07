@@ -115,7 +115,6 @@
 
 
   <a href="halaman2.html" class="btn">➡ANALISA HARIAN RHN</a>
-  <a href="Halaman3" class="btn">➡Halaman 3</a>
   </section>
 <h1><b><marquee>SELAMAT DATANG DI RHN CAPITAL</marquee></b></h1>
 <footer>
