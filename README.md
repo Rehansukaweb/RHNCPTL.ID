@@ -1,156 +1,173 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RHN CPTL</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f7;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RHN CAPITAL</title>
 
-    header {
-      background-color: #1a237e;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b1220;
+  color: #eaeaea;
+}
 
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+/* ===== HERO ===== */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg,#0b1220,#101b3a);
+}
 
-     h2 {
-      color: black;
-    }
+.hero img {
+  width: 180px;
+  margin-bottom: 20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
+.hero h1 {
+  color: #f4c26b;
+  letter-spacing: 2px;
+}
 
-    .portfolio {
-      margin-top: 20px;
-      background: #e8f5e9;
-      padding: 15px;
-      border-left: 5px solid #4caf50;
-    }
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #b8c1ff;
+}
 
-    footer {
-      background-color: #1a237e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+/* ===== SECTION ===== */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    img.pepe {
-      max-width: 150px;
-      display: block;
-      margin: 15px auto;
-    }
+.section h2 {
+  color: #f4c26b;
+  margin-bottom: 20px;
+}
 
-    .contact a {
-      display: inline-block;
-      margin: 5px 10px;
-      color: #007bff;
-      text-decoration: none;
-    }
+/* ===== PORTFOLIO ===== */
+.portfolio {
+  background: #101b3a;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    <div class="portfolio">
-  <h3>PORTOFOLIO KAMI</h3>
-  <p><strong>BTC – 100%</strong></p>
+.portfolio img {
+  width: 120px;
+  margin: 20px 0;
+}
 
-  <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" rel="noopener noreferrer">
-    <img 
-      src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
-      alt="Bitcoin Logo"
-      width="200"
-      style="display:block;margin:auto;"
-    >
-  </a>
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
 
-  <p style="text-align:center;">
-    <em>Klik logo untuk melihat Bitcoin di CoinGecko</em>
-  </p>
-</div>
+.card {
+  background: #101b3a;
+  padding: 20px;
+  border-radius: 12px;
+}
 
-  </style>
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  background: #f4c26b;
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #ffd98e;
+}
+
+/* ===== CONTACT ===== */
+.contact a {
+  display: block;
+  margin: 10px 0;
+  padding: 14px;
+  background: #101b3a;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #060a16;
+  color: #777;
+}
+</style>
 </head>
+
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero">
+  <img src="LOGO_RHN.png" alt="RHN Capital">
   <h1>RHN CAPITAL</h1>
-  <p>PERUSAHAAN YANG BERGERAK DI BIDANG KEUANGAN DAN ASET DIGITAL</p>
-</header>
-<div style="text-align:center; margin-top: 20px;">
-  <img src="RHN LOGO.jpg" alt="Logo RHN" style="width:500px;">
-</div>
-<section>
-  <h2>VISI KAMI</h2>
-  <p>MENJADI PERUSAHAAN MANDIRI YANG SUKSES MENGELOLA ASET DIGITAL DAN MEMBANGUN MASA DEPAN KEUANGAN BERBASIS TEKNOLOGI MODERN.</p>
+  <p>Perusahaan independen yang berfokus pada pengelolaan aset digital dan keuangan masa depan berbasis teknologi.</p>
+</section>
 
-  <h2>MISI KAMI</h2>
-  <ul>
-    <li>MENGELOLA DANA SECARA MANDIRI DAN BERTANGGUNG JAWAB</li>
-    <li>FOKUS PADA PORTOFOLIO ASET DIGITAL YANG KUAT DAN BERKELANJUTAN</li>
-    <li>MENGEDUKASI DAN MENGINSPIRASI GENERASI MUDA UNTUK MELEK KEUANGAN</li>
-  </ul>
-
-  <h2>DESKRIPSI PERUSAHAAN</h2>
-  <p><strong>RHN CAPITAL</strong> ADALAH PERUSAHAAN KEUANGAN YANG DIKELOLA OLEH INDIVIDU MUDA BERBAKAT YANG BERANI MENGAMBIL LANGKAH DALAM DUNIA KEUANGAN DIGITAL.KAMI PERCAYA BAHWA MASA DEPAN BERADA DI TANGAN MEREKA YANG BERANI MENGAMBIL KEPUTUSAN HARI INI.DENGAN FOKUS PADA ASET DIGITAL <strong>BITCOIN</strong>,KAMI SIAP TUMBUH BERSAMA PERKEMBANGAN INDUSTRI BLOCKCHAIN.</p>
-
-  <div class="portfolio">
-  <h3>PORTOFOLIO KAMI</h3>
-  <p><strong>BTC – 100%</strong></p>
-
-  <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" rel="noopener noreferrer">
-    <img 
-      src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
-      alt="Bitcoin Logo"
-      width="200"
-      style="display:block;margin:auto;"
-    >
-  </a>
-
-  <p style="text-align:center;">
-    <em>Klik logo untuk melihat Bitcoin di CoinGecko</em>
+<!-- ABOUT -->
+<section class="section">
+  <h2>Tentang Kami</h2>
+  <p>
+    RHN Capital dikelola oleh individu muda yang disiplin, berani mengambil keputusan,
+    dan berfokus pada pertumbuhan aset digital jangka panjang berbasis blockchain.
   </p>
-</div>
+</section>
 
-<h2>KONTAK</h2>
+<!-- PORTFOLIO -->
+<section class="section">
+  <h2>Portofolio</h2>
+  <div class="portfolio">
+    <h3>Bitcoin (BTC)</h3>
+    <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png">
+    <p>Alokasi: <strong>100%</strong></p>
+    <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" class="btn">
+      Lihat di CoinGecko
+    </a>
+  </div>
+</section>
 
-<div class="contact-buttons">
-  <a href="https://wa.me/6285717826626" target="_blank" class="btn-contact">
-    📞 WhatsApp
-  </a>
+<!-- VISION & MISSION -->
+<section class="section">
+  <h2>Visi & Misi</h2>
+  <div class="grid">
+    <div class="card">
+      <h4>Visi</h4>
+      <p>Menjadi entitas mandiri yang sukses dalam pengelolaan aset digital modern.</p>
+    </div>
+    <div class="card">
+      <h4>Misi</h4>
+      <p>Mengelola dana secara bertanggung jawab dan mengedukasi generasi muda.</p>
+    </div>
+  </div>
+</section>
 
-  <a href="https://instagram.com/huyrehan" target="_blank" class="btn-contact">
-    📸 Instagram
-  </a>
-</div>
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Kontak</h2>
+  <a href="https://wa.me/6285717826626">📞 WhatsApp</a>
+  <a href="https://instagram.com/huyrehan">📸 Instagram</a>
+  <a href="ANALISA.html" class="btn">➡ ANALISA RHN CAPITAL</a>
+</section>
 
-<a href="ANALISA.html" class="btn-analisa">➡ ANALISA RHN CAPITAL</a>
- 
-<h1><b><marquee>SELAMAT DATANG DI RHN CAPITAL</marquee></b></h1>
 <footer>
-  <p>© 2025 RHN CPTL. All rights reserved.</p>
+© 2025 RHN Capital. All rights reserved.
 </footer>
 
 </body>
