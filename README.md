@@ -245,7 +245,7 @@ footer{
   <div class="container">
     <h2 class="section-title">Kontak</h2>
     <div class="contact">
-      <a href="https://wa.me/6285717826626">WhatsApp</a>
+      <a href="https://wa.me/6285717426626">WhatsApp</a>
       <a href="https://instagram.com/huyrehan">Instagram</a>
     </div>
   </div>
