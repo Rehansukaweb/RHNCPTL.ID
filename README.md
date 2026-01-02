@@ -255,7 +255,7 @@
 <section id="contact">
   <h2>Kontak</h2>
   <div class="contact">
-    <a href="https://wa.me/6285717826626" target="_blank">WhatsApp</a>
+    <a href="https://wa.me/6285717426626" target="_blank">WhatsApp</a>
     <a href="https://instagram.com/huyrehan" target="_blank">Instagram</a>
   </div>
 </section>
