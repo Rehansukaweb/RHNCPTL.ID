@@ -5,254 +5,231 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RHN Capital</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --navy:#0b1c2d;
-  --blue:#102a43;
-  --gold:#d4af37;
-  --gray:#f4f6f8;
+  --bg:#0b1220;
+  --card:#111a2e;
+  --accent:#4f8cff;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
 }
 
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
   font-family:'Inter',sans-serif;
 }
 
 body{
-  background:#fff;
-  color:#222;
+  background: radial-gradient(circle at top, #0f1c38, #050812);
+  color:var(--text);
   line-height:1.6;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav{
-  background:var(--navy);
-  padding:16px 0;
+  position:fixed;
+  top:0;
+  width:100%;
+  backdrop-filter:blur(10px);
+  background:rgba(5,8,18,.7);
+  border-bottom:1px solid rgba(255,255,255,.05);
+  z-index:100;
 }
 
 .nav-container{
   max-width:1100px;
   margin:auto;
+  padding:16px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:0 20px;
 }
 
-nav h1{
-  color:var(--gold);
-  font-size:20px;
+.logo{
+  font-weight:700;
   letter-spacing:1px;
+  color:white;
 }
 
 nav a{
-  color:#fff;
-  text-decoration:none;
+  color:var(--muted);
   margin-left:20px;
+  text-decoration:none;
   font-size:14px;
 }
 
-/* ===== HERO ===== */
+nav a:hover{
+  color:white;
+}
+
+/* HERO */
 .hero{
-  background:linear-gradient(135deg,var(--navy),var(--blue));
-  color:#fff;
-  padding:80px 20px;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 40px;
 }
 
-.hero-container{
-  max-width:1100px;
-  margin:auto;
-}
-
-.hero h2{
-  font-size:38px;
-  margin-bottom:20px;
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:16px;
+  animation:fadeUp .8s ease;
 }
 
 .hero p{
-  max-width:600px;
-  color:#d1d9e6;
-  margin-bottom:30px;
+  max-width:620px;
+  margin:auto;
+  color:var(--muted);
+  animation:fadeUp 1s ease;
 }
 
-.hero .btn{
-  background:var(--gold);
-  color:#000;
+.hero button{
+  margin-top:32px;
   padding:14px 28px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:600;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(135deg,#4f8cff,#6aa7ff);
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(79,140,255,.4);
+  animation:fadeUp 1.2s ease;
 }
 
-/* ===== SECTION ===== */
+.hero button:hover{
+  transform:translateY(-2px);
+}
+
+/* SECTION */
 section{
-  padding:70px 20px;
-}
-
-.container{
   max-width:1100px;
   margin:auto;
+  padding:80px 20px;
 }
 
-.section-title{
-  font-size:28px;
-  margin-bottom:20px;
-  color:var(--navy);
-}
-
-.section-desc{
-  max-width:700px;
-  margin-bottom:40px;
-  color:#555;
-}
-
-/* ===== PORTFOLIO ===== */
-.portfolio-box{
-  background:var(--gray);
-  padding:40px;
-  border-radius:10px;
-  display:flex;
-  align-items:center;
-  gap:30px;
-}
-
-.portfolio-box img{
-  width:120px;
-}
-
-.portfolio-box h3{
-  margin-bottom:10px;
-}
-
-/* ===== GRID ===== */
+/* CARDS */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:24px;
 }
 
 .card{
-  background:#fff;
-  padding:30px;
-  border-radius:10px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  background:linear-gradient(180deg,#111a2e,#0b1220);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:24px;
+  transition:.3s;
 }
 
-/* ===== CONTACT ===== */
-.contact a{
-  display:inline-block;
-  margin-right:15px;
-  margin-top:10px;
-  padding:12px 22px;
-  border-radius:6px;
-  background:var(--navy);
-  color:#fff;
-  text-decoration:none;
-  font-weight:500;
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
-/* ===== FOOTER ===== */
-footer{
-  background:var(--navy);
-  color:#aaa;
+.card h3{
+  margin-bottom:8px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* PORTFOLIO */
+.portfolio{
   text-align:center;
-  padding:25px;
-  margin-top:60px;
 }
+
+.portfolio img{
+  width:90px;
+  margin:20px auto;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px 20px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:none;}
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-container">
-    <h1>RHN CAPITAL</h1>
+    <div class="logo">RHN CAPITAL</div>
     <div>
       <a href="#about">About</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#vision">Vision</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-container">
-    <h2>Independent Digital Asset Management</h2>
-    <p>
-      RHN Capital adalah entitas independen yang berfokus pada pengelolaan aset digital
-      jangka panjang berbasis teknologi blockchain.
-    </p>
-    <a href="ANALISA.html" class="btn">Analisa RHN Capital</a>
+  <div>
+    <h1>Independent Digital Asset Management</h1>
+    <p>RHN Capital adalah entitas independen yang fokus pada pengelolaan aset digital jangka panjang dengan pendekatan rasional, disiplin, dan berbasis teknologi.</p>
+    <button onclick="location.href='ANALISA.html'">Analisa RHN Capital</button>
   </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
-  <div class="container">
-    <h2 class="section-title">Tentang Kami</h2>
-    <p class="section-desc">
-      RHN Capital dikelola oleh individu muda yang disiplin, rasional,
-      dan berorientasi pada pertumbuhan aset digital berkelanjutan.
-    </p>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="container">
-    <h2 class="section-title">Portofolio</h2>
-    <div class="portfolio-box">
-      <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png">
-      <div>
-        <h3>Bitcoin (BTC)</h3>
-        <p>Alokasi portofolio: <strong>100%</strong></p>
-        <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank">Lihat di CoinGecko</a>
-      </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Visi</h3>
+      <p>Menjadi entitas profesional dan mandiri dalam pengelolaan aset digital modern.</p>
+    </div>
+    <div class="card">
+      <h3>Misi</h3>
+      <p>Mengelola dana secara bertanggung jawab dan meningkatkan literasi keuangan digital.</p>
+    </div>
+    <div class="card">
+      <h3>Prinsip</h3>
+      <p>Disiplin, transparan, rasional, dan berorientasi jangka panjang.</p>
     </div>
   </div>
 </section>
 
-<!-- VISION -->
-<section id="vision">
-  <div class="container">
-    <h2 class="section-title">Visi & Misi</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Visi</h3>
-        <p>
-          Menjadi entitas mandiri yang profesional dalam pengelolaan aset digital modern.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Misi</h3>
-        <p>
-          Mengelola dana secara bertanggung jawab dan meningkatkan literasi keuangan digital.
-        </p>
-      </div>
-    </div>
-  </div>
+<section id="portfolio" class="portfolio">
+  <h2>Portofolio</h2>
+  <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" alt="BTC">
+  <p>Bitcoin (BTC) — Alokasi 100%</p>
+  <p><a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" style="color:var(--accent)">Lihat di CoinGecko →</a></p>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <h2 class="section-title">Kontak</h2>
-    <div class="contact">
-      <a href="https://wa.me/6285717426626">WhatsApp</a>
-      <a href="https://instagram.com/huyrehan">Instagram</a>
+  <div class="grid">
+    <div class="card">
+      <h3>WhatsApp</h3>
+      <p>0857-1782-6626</p>
+    </div>
+    <div class="card">
+      <h3>Instagram</h3>
+      <p>@huyrehan</p>
     </div>
   </div>
 </section>
 
 <footer>
-© 2025 RHN Capital. All rights reserved.
+  © 2026 RHN Capital. All rights reserved.
 </footer>
 
 </body>
