@@ -257,6 +257,7 @@
   <div class="contact">
     <a href="https://wa.me/6285717426626" target="_blank">WhatsApp</a>
     <a href="https://instagram.com/huyrehan" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@rehanhuy" target="_blank">Tiktok</a>
   </div>
 </section>
 
