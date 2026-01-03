@@ -251,7 +251,7 @@
     </div>
   </div>
 </section>
-
+ <a href="ANALISA.html" class="btn">Analisa RHN Capital</a>
 <section id="contact">
   <h2>Kontak</h2>
   <div class="contact">
