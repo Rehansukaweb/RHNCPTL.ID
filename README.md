@@ -250,7 +250,9 @@
     </div>
   </div>
 </section>
-     <a href="ANALISA.html" class="btn">Analisa RHN Capital</a>
+      <div style="text-align:center;">
+      <a href="ANALISA.html" class="btn">Analisa RHN Capital</a>
+      </div>
 <section id="contact">
   <h2>Kontak</h2>
   <div class="contact">
