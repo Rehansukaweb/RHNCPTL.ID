@@ -274,10 +274,6 @@ box-shadow:0 8px 20px rgba(0,200,83,.35);
 ">
 💳 Bayar via GoPay
 </button>
-<footer>
-  © 2025 RHN Capital. All rights reserved.
-</footer>
-
 
 <html lang="id">
 <head>
@@ -439,6 +435,13 @@ alert("Kode salah");
 }
 }
 </script>
+
+
+<footer>
+  © 2025 RHN Capital. All rights reserved.
+</footer>
+
+
 
 </body>
 </html>
