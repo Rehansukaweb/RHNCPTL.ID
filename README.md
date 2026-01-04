@@ -289,34 +289,80 @@ text-align:center;
 box-shadow:0 20px 40px rgba(0,0,0,.4);
 ">
 
-<h3>Pembayaran RHN Capital</h3>
-<p>Pilih metode pembayaran</p>
-
-<img src="qris.png" alt="QRIS RHN Capital" style="
+<!-- TOMBOL BAYAR -->
+<button onclick="openQRIS()" style="
 width:100%;
-border-radius:12px;
-margin:15px 0;
-">
-
-<p style="font-size:13px;opacity:.8">
-Mendukung GoPay, DANA, OVO, ShopeePay, & Mobile Banking
-</p>
-
-<button onclick="alert('Silakan scan QRIS menggunakan GoPay / DANA / Mobile Banking')" style="
-width:100%;
-padding:14px;
+padding:16px;
+background:#16a34a;
+color:#fff;
 border:none;
 border-radius:12px;
-background:linear-gradient(135deg,#22c55e,#16a34a);
-color:#000;
+font-size:16px;
 font-weight:600;
-cursor:pointer;
-margin-top:10px;
+margin-top:20px;
 ">
-Bayar Sekarang
+💳 Bayar via QRIS
 </button>
 
+<!-- MODAL QRIS -->
+<div id="qrisModal" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:9999;
+align-items:center;
+justify-content:center;
+">
+
+  <div style="
+  width:90%;
+  max-width:360px;
+  background:#0f172a;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+  color:#fff;
+  ">
+
+    <h3 style="margin-bottom:8px;">Pembayaran RHN Capital</h3>
+    <p style="font-size:13px;color:#94a3b8;margin-bottom:14px;">
+      Scan QRIS menggunakan GoPay, DANA, OVO, ShopeePay, atau Mobile Banking
+    </p>
+
+    <!-- GAMBAR QRIS -->
+    <img src="QRIS_KAMU.png" alt="QRIS RHN Capital" style="
+    width:100%;
+    border-radius:12px;
+    margin-bottom:16px;
+    ">
+
+    <button onclick="closeQRIS()" style="
+    width:100%;
+    padding:12px;
+    background:#1e293b;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:14px;
+    ">
+    Tutup
+    </button>
+
+  </div>
 </div>
+
+<script>
+function openQRIS(){
+  document.getElementById("qrisModal").style.display="flex";
+}
+function closeQRIS(){
+  document.getElementById("qrisModal").style.display="none";
+}
+</script>
 
 </body>
 </html>
