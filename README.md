@@ -278,29 +278,6 @@ box-shadow:0 8px 20px rgba(0,200,83,.35);
   © 2025 RHN Capital. All rights reserved.
 </footer>
 
-<button onclick="openQRIS()" style="
-width:100%;
-padding:16px;
-background:linear-gradient(135deg,#16a34a,#22c55e);
-color:#fff;
-border:none;
-border-radius:14px;
-font-size:16px;
-font-weight:600;
-margin-top:20px;
-box-shadow:0 10px 25px rgba(34,197,94,.35);
-">
-💳 Bayar via QRIS
-</button>
-
-<script>
-function openQRIS(){
-  window.open(
-    "https://gopay.co.id/app/scanqr?deeplink_source=request_money",
-    "_blank"
-  );
-}
-</script>
 
 </body>
 </html>
