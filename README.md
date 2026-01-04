@@ -260,7 +260,20 @@
     <a href="https://www.tiktok.com/@rehanhuy" target="_blank">Tiktok</a>
   </div>
 </section>
-
+<button onclick="window.open('https://wa.me/6285717426626?text=Halo%20RHN%20Capital,%20saya%20ingin%20melakukan%20pembayaran%20via%20GoPay.','_blank')" style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:linear-gradient(135deg,#00c853,#1de9b6);
+color:#000;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,200,83,.35);
+">
+💳 Bayar via GoPay
+</button>
 <footer>
   © 2025 RHN Capital. All rights reserved.
 </footer>
