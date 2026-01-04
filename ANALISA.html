@@ -1,112 +1,294 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RHN Capital | Analisa Harian</title>
-  <style>
-    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body {background:#050505;color:#eee;}
-    nav {
-      background:#0a0a0a;border-bottom:1px solid #00c6ff;
-      display:flex;justify-content:space-between;align-items:center;
-      padding:12px 20px;position:sticky;top:0;z-index:100;
-    }
-    nav .logo {display:flex;align-items:center;gap:10px;}
-    nav .logo img {width:36px;height:36px;border-radius:50%;border:2px solid #00c6ff;}
-    nav .logo span {color:#00c6ff;font-size:20px;font-weight:700;}
-    nav a {color:#bbb;text-decoration:none;margin-left:15px;transition:.3s;}
-    nav a:hover {color:#00c6ff;}
-    header {
-      background:linear-gradient(90deg,#0033cc,#00c6ff);
-      text-align:center;color:#fff;padding:40px 20px;
-    }
-    header h1 {font-size:28px;margin-bottom:10px;}
-    .container {max-width:1000px;margin:30px auto;padding:0 15px;}
-    .card {
-      background:#111;border:1px solid #00c6ff33;border-radius:12px;
-      padding:20px;margin-bottom:25px;transition:.3s;
-    }
-    .card:hover {transform:translateY(-5px);box-shadow:0 0 15px #00c6ff55;}
-    .card img {width:100%;border-radius:10px;margin-bottom:10px;}
-    .card h3 {color:#00c6ff;margin-bottom:6px;}
-    .card p {color:#ccc;font-size:14px;line-height:1.4;}
-    button {
-      margin-top:10px;padding:8px 15px;background:#00c6ff;border:none;
-      border-radius:6px;color:#000;font-weight:600;cursor:pointer;transition:.3s;
-    }
-    button:hover {background:#0099cc;}
-    footer {
-      border-top:1px solid #222;color:#777;text-align:center;
-      padding:20px;font-size:13px;margin-top:40px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RHN Capital</title>
+
+<style>
+:root{
+  --bg:#0a1020;
+  --panel:#0f172a;
+  --card:#111c36;
+  --primary:#2563eb;
+  --accent:#f5c77a;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --border:#1e2a4a;
+  --radius:14px;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#070c18,#0a1020);
+  color:var(--text);
+}
+
+.container{
+  max-width:980px;
+  margin:auto;
+  padding:32px 18px 80px;
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#0f172a,#111c36);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:28px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo{
+  width:44px;
+  height:44px;
+  background:linear-gradient(135deg,#1d4ed8,#3b82f6);
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.brand h1{
+  margin:0;
+  font-size:18px;
+}
+
+.brand p{
+  margin:0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* HERO */
+.hero{
+  margin-top:22px;
+}
+
+.hero h2{
+  font-size:30px;
+  margin:0 0 10px;
+  font-weight:800;
+}
+
+.hero span{
+  color:var(--accent);
+}
+
+.hero p{
+  max-width:720px;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.actions{
+  margin-top:20px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:11px 18px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.btn.primary{
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
+  color:#fff;
+  border:none;
+}
+
+.btn.outline{
+  background:transparent;
+  color:var(--text);
+}
+
+/* SECTION */
+.section-title{
+  margin:46px 0 14px;
+  font-size:20px;
+  font-weight:700;
+  border-left:4px solid var(--accent);
+  padding-left:12px;
+}
+
+/* CARD */
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+}
+
+/* FOCUS */
+.focus{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+
+.focus-item{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+}
+
+.focus-item h4{
+  margin:0 0 8px;
+  color:var(--accent);
+}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:20px;
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:#0a1020;
+  color:var(--text);
+  margin-bottom:10px;
+}
+
+.contact textarea{
+  resize:none;
+  height:100px;
+}
+
+.quick{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+}
+
+.quick p{
+  margin:10px 0;
+  color:var(--muted);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  margin-top:60px;
+  font-size:13px;
+  color:var(--muted);
+  opacity:.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .contact{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-      <img src="RHN LOGO.jpg" alt="RHN Logo">
-      <span>RHN Capital</span>
-    </div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="halaman2.html">Tentang</a>
-      <a href="ANALISA.html">Analisa</a>
-    </div>
-  </nav>
+<div class="container">
 
-  <header>
-    <h1>Analisa Harian Market Crypto</h1>
-    <p>Pembaruan pasar, grafik, dan strategi harian dari RHN Capital.</p>
-  </header>
-
- 
-
+  <!-- HEADER -->
+  <div class="header">
+    <div class="brand">
+      <div class="logo">RH</div>
+      <div>
+        <h1>RHN Capital</h1>
+        <p>Digital Asset Research & Market Education</p>
+      </div>
     </div>
 
+    <div class="hero">
+      <h2>Independent <span>Market Analysis</span></h2>
+      <p>
+        RHN Capital adalah platform independen yang berfokus pada analisis pasar
+        crypto dan aset digital, dengan pendekatan rasional, disiplin, dan
+        berorientasi jangka panjang. Konten difokuskan pada edukasi,
+        pemahaman siklus pasar, serta manajemen risiko.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#kontak">Hubungi</a>
+        <a class="btn outline" href="https://wa.me/6285717426626" target="_blank">WhatsApp</a>
+        <a class="btn outline" href="https://instagram.com/huyrehan" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <h3 class="section-title">Tentang RHN Capital</h3>
+  <div class="card">
+    RHN Capital menyediakan riset dan analisa pasar berbasis data, sentimen
+    makro, dan struktur market. Tidak berfokus pada janji keuntungan,
+    melainkan pada proses, probabilitas, dan pengambilan keputusan yang
+    terukur dalam menghadapi volatilitas pasar.
+  </div>
+
+  <!-- FOCUS -->
+  <h3 class="section-title">Fokus Utama</h3>
+  <div class="focus">
+    <div class="focus-item">
+      <h4>Analisa Pasar</h4>
+      <p>Market cycle, struktur harga, dan sentimen global.</p>
+    </div>
+    <div class="focus-item">
+      <h4>Makro & Risiko</h4>
+      <p>Inflasi, suku bunga, geopolitik, dan manajemen risiko.</p>
+    </div>
+    <div class="focus-item">
+      <h4>Edukasi</h4>
+      <p>Pemahaman dasar hingga lanjutan untuk pengambilan keputusan rasional.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <h3 class="section-title" id="kontak">Kontak</h3>
+  <div class="contact">
     <div class="card">
-      <img src="BTC1M.png" alt="Dominasi BTC">
-      <h3>BITCOIN</h3>
-      <p>JIKA SAAT INI TELAH MEMASUKI BEAR MARKET,MAKA SEPERTI INI ARAH KEDEPANNYA</p>
-      <button onclick="window.open('https://www.tradingview.com/chart/?symbol=CRYPTOCAP:BTC')">Lihat Grafik</button>
+      <input placeholder="Nama">
+      <input placeholder="Email">
+      <textarea placeholder="Pesan"></textarea>
+      <button class="btn primary" style="width:100%">Kirim Pesan</button>
     </div>
 
-  <div class="card">
-      <img src="USDJPY1" alt="ANALISA USDJPY">
-      <h3>USDJPY</h3>
-      <p>USDJPY BERPOTENSI PENURUNAN</p>
-      </div>
-  <div class="card">
-      <img src="gbpusd" alt="ANALISA GBPUSD">
-      <h3>GBPUSD</h3>
-      <p>GBPUSD BERPOTENSI PENURUNAN</p>
-      </div>
-  <div class="card">
-      <img src="Cuplikan layar 2026-01-04 145222.png" alt="ANALISA EURUSD">
-      <h3>EURUSD</h3>
-      <p>EURUSD BERPOTENSI KENAIKAN</p>
-      </div>
-  <div class="card">
-      <img src="XAUUSD1.png" alt="ANALISA XAUUSD">
-      <h3>XAUUSD</h3>
-      <p>XAUUSD JIKA TIDAK MENEMBUS AREA FIBONACI 0,382 MAKA AKAN MELANJUTKAN PENURUNAN</p>
-      </div>
+    <div class="quick">
+      <strong>Quick Contact</strong>
+      <p>📧 huyrehan@gmail.com</p>
+      <p>📱 0857-1742-6626</p>
+      <p>📸 @huyrehan</p>
+    </div>
+  </div>
 
-   
-   <a href="ANALISA MAKRO.html" class="btn">FUNDAMENTAL</a>
-   
-<!-- Bagian Tanya Jawab RHN -->
-<section id="tanya" style="margin-top:50px; text-align:center;">
-  <h2 style="color:#00e5ff;">💬 Tanya RHN Capital</h2>
-  <p>Kirim pertanyaanmu langsung ke tim RHN Capital!</p>
+  <footer>
+    © 2026 RHN Capital — Market Research & Education
+  </footer>
 
-  <form action="mailto:huyrehan@gmail.com" method="post" enctype="text/plain" style="max-width:400px;margin:auto;background:#1b2440;padding:20px;border-radius:15px;">
-    <input type="text" name="Nama" placeholder="Nama kamu" required style="width:100%;padding:10px;border:none;border-radius:10px;margin-bottom:10px;">
-    <input type="email" name="Email" placeholder="Email kamu" required style="width:100%;padding:10px;border:none;border-radius:10px;margin-bottom:10px;">
-    <textarea name="Pesan" rows="5" placeholder="Tulis pertanyaan kamu..." required style="width:100%;padding:10px;border:none;border-radius:10px;margin-bottom:10px;"></textarea>
-    <button type="submit" style="background:#00bcd4;color:white;border:none;padding:12px 20px;font-size:1em;border-radius:10px;cursor:pointer;">Kirim Pertanyaan</button>
-  </form>
-</section>
-  <footer>© 2025 RHN Capital | Semua hak dilindungi.</footer>
+</div>
 </body>
 </html>
