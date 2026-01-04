@@ -1,0 +1,79 @@
+<!-- ANALISA TEKS & MAKRO -->
+<section class="analysis-text">
+  <div class="analysis-card">
+    <h2 class="analysis-title">ANALISA MAKRO & SENTIMEN PASAR</h2>
+    <p class="analysis-subtitle">
+      Ringkasan kondisi global, sentimen investor, dan implikasinya terhadap crypto market.
+    </p>
+
+    <div class="analysis-content">
+      <p>
+        Saat ini pasar crypto bergerak di bawah tekanan sentimen makro global. 
+        Faktor utama berasal dari kebijakan suku bunga, geopolitik, serta rotasi modal 
+        ke aset defensif. Bitcoin masih menjadi acuan utama arah pasar.
+      </p>
+
+      <p>
+        Selama Bitcoin bertahan di atas area support kunci, peluang konsolidasi sehat 
+        tetap terbuka. Namun jika tekanan jual meningkat dan support ditembus, 
+        pasar berpotensi memasuki fase koreksi lanjutan.
+      </p>
+
+      <p>
+        Strategi utama saat ini adalah disiplin manajemen risiko, 
+        menghindari FOMO, dan fokus pada aset dengan fundamental kuat 
+        untuk jangka menengah hingga panjang.
+      </p>
+    </div>
+
+    <div class="analysis-note">
+      <strong>Catatan RHN Capital:</strong><br>
+      Analisa ini bersifat edukasi, bukan ajakan beli atau jual. 
+      Selalu lakukan riset mandiri dan kelola risiko dengan bijak.
+    </div>
+  </div>
+</section>
+
+<style>
+.analysis-text{
+  padding: 24px 16px;
+}
+
+.analysis-card{
+  background: linear-gradient(180deg,#0b1220,#020617);
+  border-radius: 18px;
+  padding: 22px;
+  color: #e5e7eb;
+  box-shadow: 0 0 30px rgba(56,189,248,.15);
+  border: 1px solid rgba(56,189,248,.15);
+}
+
+.analysis-title{
+  font-size: 20px;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.analysis-subtitle{
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.analysis-content p{
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.analysis-note{
+  margin-top: 16px;
+  padding: 14px;
+  background: rgba(2,132,199,.12);
+  border-radius: 12px;
+  font-size: 13px;
+  color: #bae6fd;
+}
+</style>
