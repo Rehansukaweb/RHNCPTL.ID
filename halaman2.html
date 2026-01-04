@@ -1,44 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RHN Capital — Rehan</title>
+<title>RHN Capital</title>
 
 <style>
 :root{
-  --bg:#f4f8fc;
-  --card:#ffffff;
+  --bg:#0a1020;
+  --panel:#0f172a;
+  --card:#111c36;
   --primary:#2563eb;
-  --text:#0f172a;
-  --muted:#64748b;
-  --radius:16px;
+  --accent:#f5c77a;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --border:#1e2a4a;
+  --radius:14px;
 }
 
 *{
   box-sizing:border-box;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
 }
 
 body{
   margin:0;
-  background:var(--bg);
+  background:linear-gradient(180deg,#070c18,#0a1020);
   color:var(--text);
-  line-height:1.6;
 }
 
 .container{
-  max-width:960px;
+  max-width:980px;
   margin:auto;
-  padding:32px 20px 80px;
+  padding:32px 18px 80px;
 }
 
 /* HEADER */
 .header{
-  background:linear-gradient(135deg,#e0edff,#f8fbff);
+  background:linear-gradient(135deg,#0f172a,#111c36);
+  border:1px solid var(--border);
   border-radius:var(--radius);
-  padding:24px;
-  margin-bottom:28px;
+  padding:28px;
 }
 
 .brand{
@@ -48,127 +51,92 @@ body{
 }
 
 .logo{
-  width:48px;
-  height:48px;
-  background:var(--primary);
-  color:#fff;
-  font-weight:700;
+  width:44px;
+  height:44px;
+  background:linear-gradient(135deg,#1d4ed8,#3b82f6);
+  border-radius:10px;
   display:flex;
   align-items:center;
   justify-content:center;
-  border-radius:12px;
+  font-weight:800;
+  letter-spacing:1px;
 }
 
 .brand h1{
   margin:0;
-  font-size:20px;
+  font-size:18px;
 }
 
 .brand p{
   margin:0;
-  font-size:14px;
+  font-size:13px;
   color:var(--muted);
 }
 
 /* HERO */
 .hero{
-  margin-top:18px;
+  margin-top:22px;
 }
 
 .hero h2{
-  font-size:28px;
-  margin:0 0 8px;
+  font-size:30px;
+  margin:0 0 10px;
+  font-weight:800;
 }
 
 .hero span{
-  color:var(--primary);
+  color:var(--accent);
 }
 
 .hero p{
-  max-width:640px;
+  max-width:720px;
   color:var(--muted);
+  line-height:1.7;
 }
 
 .actions{
-  margin-top:18px;
+  margin-top:20px;
   display:flex;
   gap:12px;
   flex-wrap:wrap;
 }
 
 .btn{
-  padding:10px 16px;
+  padding:11px 18px;
   border-radius:10px;
-  border:none;
+  border:1px solid var(--border);
   font-weight:600;
+  font-size:14px;
   cursor:pointer;
   text-decoration:none;
 }
 
 .btn.primary{
-  background:var(--primary);
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
   color:#fff;
+  border:none;
 }
 
 .btn.outline{
-  background:#fff;
-  border:1px solid #e2e8f0;
+  background:transparent;
   color:var(--text);
-}
-
-/* STATS */
-.stats{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:16px;
-  margin:28px 0;
-}
-
-.stat{
-  background:var(--card);
-  padding:18px;
-  border-radius:var(--radius);
-  text-align:center;
-}
-
-.stat small{
-  color:var(--muted);
-}
-
-/* PROFILE CARD */
-.card{
-  background:var(--card);
-  border-radius:var(--radius);
-  padding:24px;
-  margin-bottom:28px;
-}
-
-.profile{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.profile-info h3{
-  margin:0;
-}
-
-.profile-info p{
-  margin:4px 0;
-  color:var(--muted);
-}
-
-.profile-actions{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
 }
 
 /* SECTION */
 .section-title{
-  margin:40px 0 12px;
+  margin:46px 0 14px;
   font-size:20px;
+  font-weight:700;
+  border-left:4px solid var(--accent);
+  padding-left:12px;
+}
+
+/* CARD */
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
 }
 
 /* FOCUS */
@@ -180,12 +148,14 @@ body{
 
 .focus-item{
   background:var(--card);
+  border:1px solid var(--border);
   border-radius:var(--radius);
   padding:20px;
 }
 
 .focus-item h4{
-  margin:0 0 6px;
+  margin:0 0 8px;
+  color:var(--accent);
 }
 
 /* CONTACT */
@@ -200,7 +170,9 @@ body{
   width:100%;
   padding:12px;
   border-radius:10px;
-  border:1px solid #e2e8f0;
+  border:1px solid var(--border);
+  background:#0a1020;
+  color:var(--text);
   margin-bottom:10px;
 }
 
@@ -211,24 +183,27 @@ body{
 
 .quick{
   background:var(--card);
+  border:1px solid var(--border);
   border-radius:var(--radius);
   padding:20px;
 }
 
 .quick p{
-  margin:8px 0;
+  margin:10px 0;
   color:var(--muted);
 }
 
+/* FOOTER */
 footer{
   text-align:center;
-  color:var(--muted);
   margin-top:60px;
-  font-size:14px;
+  font-size:13px;
+  color:var(--muted);
+  opacity:.7;
 }
 
 /* RESPONSIVE */
-@media(max-width:700px){
+@media(max-width:800px){
   .contact{
     grid-template-columns:1fr;
   }
@@ -237,7 +212,6 @@ footer{
 </head>
 
 <body>
-
 <div class="container">
 
   <!-- HEADER -->
@@ -246,106 +220,75 @@ footer{
       <div class="logo">RH</div>
       <div>
         <h1>RHN Capital</h1>
-        <p>Tentang singkat — Rehan</p>
+        <p>Digital Asset Research & Market Education</p>
       </div>
     </div>
 
     <div class="hero">
-      <h2>Rehan — <span>Investor Muda</span></h2>
+      <h2>Independent <span>Market Analysis</span></h2>
       <p>
-        Halo, saya Rehan. Fokus belajar dan praktik di dunia crypto, trading,
-        dan pengembangan web. Halaman ini adalah ringkasan umum — simple,
-        profesional, dan mudah dihubungi.
+        RHN Capital adalah platform independen yang berfokus pada analisis pasar
+        crypto dan aset digital, dengan pendekatan rasional, disiplin, dan
+        berorientasi jangka panjang. Konten difokuskan pada edukasi,
+        pemahaman siklus pasar, serta manajemen risiko.
       </p>
 
       <div class="actions">
-        <a class="btn primary" href="mailto:huyrehan@gmail.com">Kirim Email</a>
-        <a class="btn outline" href="https://wa.me/6285717426626" target="_blank">Chat WA</a>
-        <a class="btn outline" href="https://instagram.com/huyrehan" target="_blank">Buka IG</a>
+        <a class="btn primary" href="#kontak">Hubungi</a>
+        <a class="btn outline" href="https://wa.me/6285717426626" target="_blank">WhatsApp</a>
+        <a class="btn outline" href="https://instagram.com/huyrehan" target="_blank">Instagram</a>
       </div>
     </div>
   </div>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stat">
-      <h3>Rp 0</h3>
-      <small>AUM (contoh)</small>
-    </div>
-    <div class="stat">
-      <h3>0%</h3>
-      <small>Return 1Y</small>
-    </div>
-    <div class="stat">
-      <h3>0</h3>
-      <small>Clients</small>
-    </div>
-  </div>
-
-  <!-- PROFILE -->
-  <div class="card profile">
-    <div class="profile-info">
-      <h3>Rehan</h3>
-      <p>Investor muda • 16 tahun • Bogor</p>
-      <p>Email: huyrehan@gmail.com</p>
-    </div>
-    <div class="profile-actions">
-      <button class="btn outline">Salin Kontak</button>
-      <button class="btn outline">Unduh vCard</button>
-      <button class="btn outline">Simpan Lokal</button>
-    </div>
-  </div>
-
   <!-- ABOUT -->
-  <h3 class="section-title">Tentang Saya</h3>
-  <p class="card">
-    Saya sedang belajar Rekayasa Perangkat Lunak (RPL) di SMK Tri Dharma, Bogor.
-    Minat utama: cryptocurrency (PEPE & lainnya), trading di Exness, web
-    development, dan AI. Tujuan saya adalah konsisten menumbuhkan modal melalui
-    pembelajaran dan praktik terukur.
-  </p>
+  <h3 class="section-title">Tentang RHN Capital</h3>
+  <div class="card">
+    RHN Capital menyediakan riset dan analisa pasar berbasis data, sentimen
+    makro, dan struktur market. Tidak berfokus pada janji keuntungan,
+    melainkan pada proses, probabilitas, dan pengambilan keputusan yang
+    terukur dalam menghadapi volatilitas pasar.
+  </div>
 
   <!-- FOCUS -->
-  <h3 class="section-title">Fokus & Minat</h3>
+  <h3 class="section-title">Fokus Utama</h3>
   <div class="focus">
     <div class="focus-item">
-      <h4>Crypto</h4>
-      <p>Analisa dasar & akumulasi jangka panjang, on-chain & volume.</p>
+      <h4>Analisa Pasar</h4>
+      <p>Market cycle, struktur harga, dan sentimen global.</p>
     </div>
     <div class="focus-item">
-      <h4>Trading</h4>
-      <p>Praktik akun cent & strategi risk-first.</p>
+      <h4>Makro & Risiko</h4>
+      <p>Inflasi, suku bunga, geopolitik, dan manajemen risiko.</p>
     </div>
     <div class="focus-item">
-      <h4>Web & AI</h4>
-      <p>Portofolio web sederhana & eksplorasi AI.</p>
+      <h4>Edukasi</h4>
+      <p>Pemahaman dasar hingga lanjutan untuk pengambilan keputusan rasional.</p>
     </div>
   </div>
 
   <!-- CONTACT -->
-  <h3 class="section-title">Kontak</h3>
+  <h3 class="section-title" id="kontak">Kontak</h3>
   <div class="contact">
     <div class="card">
-      <input type="text" placeholder="Nama">
-      <input type="email" placeholder="Email">
-      <input type="text" placeholder="Nomor HP">
-      <textarea placeholder="Tulis pesan..."></textarea>
-      <button class="btn primary" style="width:100%">Kirim</button>
+      <input placeholder="Nama">
+      <input placeholder="Email">
+      <textarea placeholder="Pesan"></textarea>
+      <button class="btn primary" style="width:100%">Kirim Pesan</button>
     </div>
 
     <div class="quick">
       <strong>Quick Contact</strong>
       <p>📧 huyrehan@gmail.com</p>
-      <p>📱 085717426626</p>
+      <p>📱 0857-1742-6626</p>
       <p>📸 @huyrehan</p>
     </div>
   </div>
 
   <footer>
-    © 2026 RHN Capital. All rights reserved.
+    © 2026 RHN Capital — Market Research & Education
   </footer>
 
 </div>
-
 </body>
 </html>
