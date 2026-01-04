@@ -278,7 +278,7 @@ box-shadow:0 8px 20px rgba(0,200,83,.35);
   © 2025 RHN Capital. All rights reserved.
 </footer>
 
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -398,13 +398,7 @@ margin-top:30px;
 
 <!-- PAGE 4 -->
 <div class="card hidden" id="page-private">
-<h2>📚 Edukasi RHN Capital</h2>
-<p>
-• Mindset Investor Disiplin<br>
-• Tidak FOMO & Tidak Leverage<br>
-• Strategi Jangka Panjang<br>
-• Analisa Rasional Market
-</p>
+<a href="ANALISA.html" class="btn">Analisa RHN Capital</a>
 
 <p style="margin-top:10px;font-size:13px;opacity:.7">
 Akses ini bersifat pribadi.
