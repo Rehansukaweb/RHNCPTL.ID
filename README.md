@@ -202,50 +202,42 @@
 
 <header>
   <div class="nav">
-    <div class="logo">RHN CAPITAL</div>
+    <div class="logo">FARHAN STORE</div>
     <nav>
       <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
-<img src="RHN LOGO.jpg" alt="Logo RHN" style="width:1000px;">
+<img src="file_00000000d06471f88de72ec4ce9cac39.png" alt="Logo RHN" style="width:1000px;">
 <section class="hero">
   <div>
-    <h1>RHN CAPITAL</h1>
+    <h1>FARHAN STORE</h1>
     <p>
-      Rehan CPTL adalah entitas independen yang berfokus pada pengelolaan aset digital jangka panjang berbasis teknologi blockchain. RHN Capital mengedepankan pendekatan rasional, disiplin, dan manajemen risiko yang ketat dalam setiap pengambilan keputusan, dengan menempatkan Bitcoin sebagai fondasi utama portofolio. Berorientasi pada keberlanjutan dan konsistensi, RHN Capital hadir sebagai representasi investasi modern yang profesional, transparan, dan bertanggung jawab dalam menghadapi dinamika pasar global.
+      FARHAN STORE adalah layanan independen yang berfokus pada jasa joki game Free Fire (FF) dan Mobile Legends (ML) serta penjualan room wangi terpercaya. Farhan Store mengedepankan pelayanan yang aman, cepat, dan transparan, dengan komitmen penuh terhadap kepuasan pelanggan.
+Beroperasi dengan sistem yang rapi dan bertanggung jawab, Farhan Store mengutamakan keamanan akun, ketepatan waktu, serta hasil yang sesuai kesepakatan. Dengan pendekatan profesional dan komunikasi yang jelas, Farhan Store hadir sebagai solusi bagi pemain yang ingin meningkatkan performa permainan secara efisien dan terpercaya.
+Berorientasi pada kepercayaan dan konsistensi, Farhan Store siap menjadi partner andalan bagi komunitas gamer FF dan ML.
     </p>
     
   </div>
 
-  <div class="hero-card">
-    <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" width="500">
-    <h3>Bitcoin (BTC)</h3>
-    <p class="text-muted">Primary Strategic Asset</p>
-  </div>
+ 
 </section>
 
 <section id="about">
   <h2>Tentang Kami</h2>
   <p class="text-muted">
-    RHN Capital dikelola oleh individu muda yang disiplin, rasional,
-    dan berorientasi pada pertumbuhan aset digital berkelanjutan.
+    Farhan Store adalah layanan joki FF & ML serta penjual room wangi yang mengutamakan kepercayaan, keamanan akun, dan pelayanan cepat dengan harga yang transparan.
   </p>
 </section>
 
-<section id="portfolio">
-  <h2>Portofolio</h2>
+
+  <h2>FARHAN STORE</h2>
   <div class="portfolio">
     <div class="card">
-      <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" width="250">
-      <h3>Bitcoin (BTC)</h3>
-      <p class="text-muted">Alokasi: 100%</p>
-      <br>
-      <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" class="btn">
-        Lihat di CoinGecko
-      </a>
+      <img src="file_00000000d06471f88de72ec4ce9cac39.png" width="250">
+      <h3>FARHAN STORE</h3>
+     
     </div>
   </div>
 </section>
