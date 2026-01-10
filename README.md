@@ -436,9 +436,140 @@ alert("Kode salah");
 }
 </script>
 
+<!-- ===== FARHAN STORE ULTRA ANIMATION ===== -->
+<style>
+/* CINEMATIC BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #022c22, #020617 60%);
+  animation: bgSlow 20s ease-in-out infinite;
+}
+
+@keyframes bgSlow {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+
+/* LOADER CINEMATIC */
+#fs-loader {
+  position: fixed;
+  inset: 0;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#fs-loader h1 {
+  font-size: 28px;
+  letter-spacing: 6px;
+  color: #22c55e;
+  animation: logoGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0% {opacity: .2; text-shadow: 0 0 0 #22c55e;}
+  50% {opacity: 1; text-shadow: 0 0 25px #22c55e;}
+  100% {opacity: .2; text-shadow: 0 0 0 #22c55e;}
+}
+
+/* CARD SUPER SLOW */
+.card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(18px);
+  border-radius: 26px;
+  padding: 26px;
+  margin: 24px 0;
+  transform: translateY(80px) scale(0.9);
+  opacity: 0;
+  transition: all 1.4s cubic-bezier(.16,1,.3,1);
+  box-shadow: 0 0 0 rgba(34,197,94,0);
+}
+
+.card.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  box-shadow: 0 0 50px rgba(34,197,94,0.2);
+}
+
+/* FLOAT EFFECT (HIDUP TERUS) */
+.card.show {
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-6px);}
+  100% {transform: translateY(0);}
+}
+
+/* BUTTON GOD-TIER */
+.btn-premium {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 18px;
+  animation: slowPulse 3.5s infinite;
+  transition: all .35s ease;
+}
+
+.btn-premium:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(34,197,94,.9);
+}
+
+@keyframes slowPulse {
+  0% {box-shadow: 0 0 0 rgba(34,197,94,0);}
+  50% {box-shadow: 0 0 35px rgba(34,197,94,0.6);}
+  100% {box-shadow: 0 0 0 rgba(34,197,94,0);}
+}
+
+/* TEXT FADE PREMIUM */
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeText 2.2s ease forwards;
+}
+
+@keyframes fadeText {
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+<div id="fs-loader">
+  <h1>FARHAN STORE</h1>
+</div>
+
+<script>
+/* LOADER LEBIH LAMA (PREMIUM FEEL) */
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("fs-loader")?.remove();
+  }, 2500);
+});
+
+/* SCROLL ANIMATION SUPER HALUS */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".card").forEach(card => observer.observe(card));
+</script>
+<!-- ===== END ULTRA ===== -->
 
 <footer>
-  © 2025 RHN Capital. All rights reserved.
+  © 2025 FARHAN STORE. JOKI FF DAN ML TERPERCAYA DAN ROOM WANGI 
 </footer>
 
 
