@@ -257,7 +257,7 @@ Berorientasi pada kepercayaan dan konsistensi, Farhan Store siap menjadi partner
   <div class="contact">
     <a href="https://wa.me/6285717426626" target="_blank">WhatsApp</a>
     <a href="https://instagram.com/huyrehan" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@rehanhuy" target="_blank">Tiktok</a>
+    <a href="https://www.tiktok.com/@FARHAN STORE" target="_blank">Tiktok</a>
   </div>
 </section>
 <button onclick="window.open('https://wa.me/6285717426626?text=Halo%20FARHAN%20STORE,%20saya%20ingin%20melakukan%20pembayaran.','_blank')" style="
