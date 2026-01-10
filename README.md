@@ -251,7 +251,7 @@ Berorientasi pada kepercayaan dan konsistensi, Farhan Store siap menjadi partner
     <a href="https://www.tiktok.com/@rehanhuy" target="_blank">Tiktok</a>
   </div>
 </section>
-<button onclick="window.open('https://wa.me/6285717426626?text=Halo%20FARHAN%20STORE,%20saya%20ingin%20melakukan%20pembayaran%20via%20GoPay.','_blank')" style="
+<button onclick="window.open('https://wa.me/6285717426626?text=Halo%20FARHAN%20STORE,%20saya%20ingin%20melakukan%20pembayaran%.','_blank')" style="
 width:100%;
 padding:14px;
 border:none;
@@ -263,7 +263,7 @@ font-weight:600;
 cursor:pointer;
 box-shadow:0 8px 20px rgba(0,200,83,.35);
 ">
-💳 Bayar via GoPay
+💳 Bayar
 </button>
 
 <html lang="id">
